@@ -17,7 +17,10 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="description" content="Grace Caballero Design" />
       </Head>
       <body className={`${lato.variable}`}>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="flex justify-center items-center bg-off-white pt-10">
+          <img src="gcd-logo.svg" className="w-60 sm:w-100 md:w-130" />
+        </div>
         <Component {...pageProps} />
       </body>
     </>
