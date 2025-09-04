@@ -8,9 +8,16 @@ const Navbar = () => {
         aria-label="Main navigation"
       >
         <div className="w-75 sm:w-80 md:w-100 text-xs sm:text-sm md:text-lg flex justify-between py-5">
-          <span className="font-montserrat">ABOUT</span>
-          <span className="font-montserrat">PORTFOLIO</span>
-          <span className="font-montserrat">CONTACT</span>
+          <Link href="/about" className="font-montserrat">
+            ABOUT
+          </Link>
+          {/* <Link href="/portfolio" className="font-montserrat pl-4">
+            PORTFOLIO
+          </Link> */}
+          <span className="font-montserrat pl-4">PORTFOLIO</span>
+          <Link href="/contact" className="font-montserrat">
+            CONTACT
+          </Link>
         </div>
       </nav>
     </header>

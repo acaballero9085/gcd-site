@@ -1,7 +1,6 @@
-'use client';
 import { useState, useEffect } from 'react';
 
-const Home = () => {
+const Contact = () => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -18,23 +17,12 @@ const Home = () => {
           ${loaded ? 'opacity-100' : 'opacity-0'}
         `}
       >
-        <div>
-          <img
-            src="/images/foyer_landing_page.jpg"
-            width={500}
-            height={400}
-            alt="foyer"
-            className="w-80 sm:w-100 md:w-120"
-          />
-        </div>
-
         <span className="font-montserrat pt-6">
           hello@gracecaballerodesign.com
         </span>
-        <span className="font-montserrat">birmingham, al</span>
       </main>
     </div>
   );
 };
 
-export default Home;
+export default Contact;

@@ -2,6 +2,7 @@ import '@/styles/globals.css';
 import { Lato, Montserrat } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Head from 'next/head';
+import Link from 'next/link';
 
 const lato = Lato({
   variable: '--font-lato',
@@ -23,9 +24,11 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="description" content="Grace Caballero Design" />
       </Head>
       <body className={`${lato.variable} ${montserrat.variable}`}>
-        <div className="flex justify-center items-center bg-off-white pt-10">
-          <img src="gcd-logo.svg" className="w-60 sm:w-80 md:w-100" />
-        </div>
+        <Link href="/">
+          <div className="flex justify-center items-center bg-off-white pt-4">
+            <img src="gcd-logo.svg" className="w-40 sm:w-60 md:w-80" />
+          </div>
+        </Link>
         <Navbar />
         <Component {...pageProps} />
       </body>
