@@ -1,12 +1,17 @@
 import '@/styles/globals.css';
-import Navbar from '@/components/Navbar';
-import { Lato } from 'next/font/google';
+import { Lato, Montserrat } from 'next/font/google';
 import Head from 'next/head';
 
 const lato = Lato({
   variable: '--font-lato',
   subsets: ['latin'],
   weight: '300',
+});
+
+const montserrat = Montserrat({
+  variable: '--font-montserrat',
+  subsets: ['latin'],
+  weight: ['200', '300'],
 });
 
 export default function MyApp({ Component, pageProps }) {
@@ -16,10 +21,10 @@ export default function MyApp({ Component, pageProps }) {
         <title>Grace Caballero Design</title>
         <meta name="description" content="Grace Caballero Design" />
       </Head>
-      <body className={`${lato.variable}`}>
+      <body className={`${lato.variable} ${montserrat.variable}`}>
         {/* <Navbar /> */}
         <div className="flex justify-center items-center bg-off-white pt-10">
-          <img src="gcd-logo.svg" className="w-60 sm:w-100 md:w-130" />
+          <img src="gcd-logo.svg" className="w-60 sm:w-80 md:w-100" />
         </div>
         <Component {...pageProps} />
       </body>

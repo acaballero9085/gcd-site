@@ -19,9 +19,9 @@ const Home = () => {
         `}
       >
         <div className="w-75 sm:w-80 md:w-100 text-xs sm:text-sm md:text-lg flex justify-between pb-5">
-          <span className="font-lato">ABOUT</span>
-          <span className="font-lato">PORTFOLIO</span>
-          <span className="font-lato">CONTACT</span>
+          <span className="font-montserrat">ABOUT</span>
+          <span className="font-montserrat">PORTFOLIO</span>
+          <span className="font-montserrat">CONTACT</span>
         </div>
 
         {/* Image (bottom on mobile, left on desktop) */}
@@ -35,8 +35,10 @@ const Home = () => {
           />
         </div>
 
-        <span className="font-lato pt-10">grace@gracecaballerodesign.com</span>
-        <span className="font-lato">birmingham, al</span>
+        <span className="font-montserrat pt-10">
+          hello@gracecaballerodesign.com
+        </span>
+        <span className="font-montserrat">birmingham, al</span>
       </main>
     </div>
   );
