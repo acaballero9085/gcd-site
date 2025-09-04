@@ -13,16 +13,16 @@ const Home = () => {
     <div className="min-h-[calc(100vh)] bg-off-white">
       <main
         className={`
-          flex flex-col justify-center items-center py-12 
+          flex flex-col justify-center items-center
           transition-opacity duration-3000 ease-in-out 
           ${loaded ? 'opacity-100' : 'opacity-0'}
         `}
       >
-        <div className="w-75 sm:w-80 md:w-100 text-xs sm:text-sm md:text-lg flex justify-between pb-5">
+        {/* <div className="w-75 sm:w-80 md:w-100 text-xs sm:text-sm md:text-lg flex justify-between pb-5">
           <span className="font-montserrat">ABOUT</span>
           <span className="font-montserrat">PORTFOLIO</span>
           <span className="font-montserrat">CONTACT</span>
-        </div>
+        </div> */}
 
         {/* Image (bottom on mobile, left on desktop) */}
         <div>
